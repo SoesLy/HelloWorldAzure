@@ -19,7 +19,7 @@ jobs:
       - name: Set up Java version
         uses: actions/setup-java@v1
         with:
-          java-version: '17'
+          java-version: '11'
 
       - name: Build with Maven
         run: mvn clean install
@@ -50,5 +50,5 @@ jobs:
         with:
           app-name: 'azurehelloworld'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_783C3C1663624105A9EDB0457B04DEA0 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_3D0C85219F9B4619B331AC42C3AC2A5E }}
           package: '*.jar'
